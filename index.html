@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotti Coffee 库迪咖啡 - 每一杯都充满活力</title>
+    <style>
+        /* 基础样式，让页面看起来更整洁 */
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #A00000; /* 库迪咖啡的主题红色 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+        }
+
+        nav {
+            background-color: #8C0000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* 悬停时的亮黄色 */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section-title {
+            color: #A00000;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            flex-basis: 30%; /* 每个产品占据约30%的宽度 */
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            transition: transform 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>COTTI COFFEE 库迪咖啡</h1>
+        <p>每一杯都充满活力。从体育场到写字楼，随时随地享受新鲜咖啡。</p>
+    </header>
+
+    <nav>
+        <a href="#about">关于我们</a>
+        <a href="#menu">明星产品</a>
+        <a href="#stores">门店查询</a>
+        <a href="#">立即下单 (APP)</a>
+    </nav>
+
+    <div id="about" class="container">
+        <h2 class="section-title">✨ 关于库迪咖啡</h2>
+        <p>库迪咖啡致力于为顾客提供高品质、高性价比的专业咖啡饮品和友好便捷的消费体验。我们的咖啡豆经过精心挑选和烘焙，确保每一杯咖啡都能带给您醇厚、新鲜的口感。</p>
+        <p><strong>核心理念：</strong> 专业咖啡、便捷服务、活力体验。</p>
+    </div>
+
+    <div id="menu" class="container">
+        <h2 class="section-title">🌟 明星产品推荐</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="placeholder-coffee1.jpg" alt="潘帕斯蓝拿铁">
+                <h3>潘帕斯蓝拿铁</h3>
+                <p>独特风味，搭配浓郁奶香，口感丝滑。</p>
+                <p style="color: #A00000; font-weight: bold;">￥9.9 起</p>
+            </div>
+
+            <div class="product-item">
+                <img src="placeholder-coffee2.jpg" alt="经典美式">
+                <h3>经典美式</h3>
+                <p>唤醒一天的精神，纯粹的咖啡享受。</p>
+                <p style="color: #A00000; font-weight: bold;">￥8.8 起</p>
+            </div>
+
+            <div class="product-item">
+                <img src="placeholder-coffee3.jpg" alt="生椰拿铁">
+                <h3>生椰拿铁</h3>
+                <p>清甜生椰与香浓咖啡的完美融合。</p>
+                <p style="color: #A00000; font-weight: bold;">时令特饮</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="stores" class="container">
+        <h2 class="section-title">📍 门店查询</h2>
+        <p>库迪咖啡已覆盖全国各大城市，请通过我们的官方APP或小程序查找您附近的门店，立即下单享受便捷取餐服务！</p>
+        
+        <form style="text-align: center; margin-top: 20px;">
+            <input type="text" placeholder="输入您的城市/地区" style="padding: 10px; width: 60%; border: 1px solid #ccc; border-radius: 4px;">
+            <button type="submit" style="padding: 10px 20px; background-color: #A00000; color: white; border: none; border-radius: 4px; cursor: pointer;">搜索门店</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cotti Coffee 库迪咖啡 版权所有</p>
+        <p>联系我们 | 商务合作</p>
+    </footer>
+
+</body>
+</html>
