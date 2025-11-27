@@ -1,0 +1,23 @@
+{
+  "name": "dialect-web",
+  "version": "1.0.0",
+  "description": "A web project to display the Chinese dialect memory guide.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build step not defined yet.'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "dialect",
+    "Chinese",
+    "language",
+    "memory",
+    "guide"
+  ]
+}
